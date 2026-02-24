@@ -24,8 +24,8 @@ wheels/
 *.egg
 
 # Remote sensing images (large files)
-rsicd_imgs/
-demo/rsicd_imgs/
+# rsicd_imgs/
+# demo/rsicd_imgs/
 
 # Data files
 data/
