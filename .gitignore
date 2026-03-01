@@ -30,7 +30,6 @@ wheels/
 # Data files
 data/
 demo/data/
-*.pt
 
 # IDE
 .vscode/
