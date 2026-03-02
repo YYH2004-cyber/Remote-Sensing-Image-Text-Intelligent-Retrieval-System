@@ -140,29 +140,23 @@
 demo/
 ├── main.py                      # 主应用入口
 ├── utils.py                     # 工具函数模块
-├── requirements.txt             # 依赖包列表
-├── COMPLETE_GUIDE.md           # 完整指南文档
-├── LEARNING_ROADMAP.md         # 学习路线文档
-├── TECHNICAL_DOCUMENTATION.md   # 技术文档
+├── requirement.txt              # 依赖包列表
+├── setup.sh                     # 安装脚本
+├── COMPLETE_GUIDE.md            # 完整指南文档
+├── GRADUATION_AND_INTERVIEW_PREP.md  # 毕业与面试准备文档
 ├── README.md                    # 项目说明文档
-├── SETUP_GUIDE.md             # 环境配置指南
+├── SETUP_GUIDE.md               # 环境配置指南
 ├── data/                        # 数据目录
-│   ├── faiss_index.bin         # 图像向量索引
-│   ├── faiss_index_text.bin    # 文本向量索引
-│   ├── meta.json               # 图像元数据
-│   ├── meta_text.json          # 文本元数据
-│   ├── RS5M_ViT-B-32_RSICD.pt  # 预训练模型权重
-│   └── search_history.json     # 检索历史记录
+│   └── search_history.json      # 检索历史记录
 ├── rsicd_imgs/                  # 遥感图像库
-├── preparation/                 # 数据预处理脚本
-│   ├── build_faiss_image.py    # 构建图像索引
-│   └── build_faiss_text.py     # 构建文本索引
-└── tools/                       # 辅助工具
-    ├── dataset_rsicd.json      # RSICD数据集
-    ├── dataset_RSITMD.json     # RSITMD数据集
-    ├── captions.txt            # 图像描述文本
-    ├── get_captions.py         # 描述提取工具
-    └── img_name.py             # 图像命名工具
+└── demo/                        # demo子目录
+    └── tools/                   # 辅助工具
+        ├── dataset_rsicd.json   # RSICD数据集
+        ├── dataset_RSITMD.json  # RSITMD数据集
+        ├── captions.txt         # 图像描述文本
+        ├── get_captions.py      # 描述提取工具
+        ├── img_name.py          # 图像命名工具
+        └── search_queries_with_prefixes.txt  # 搜索查询文本
 ```
 
 #### 目录说明
@@ -170,29 +164,27 @@ demo/
 **核心文件**：
 - `main.py` - Streamlit Web应用主入口，包含所有页面和交互逻辑
 - `utils.py` - 工具函数模块，包含模型加载、向量生成、索引管理等核心功能
-- `requirements.txt` - Python依赖包列表
+- `requirement.txt` - Python依赖包列表
+- `setup.sh` - 一键安装脚本
 
 **文档文件**：
 - `COMPLETE_GUIDE.md` - 完整指南，整合了所有文档内容
-- `LEARNING_ROADMAP.md` - 详细的学习路线图
-- `TECHNICAL_DOCUMENTATION.md` - 技术文档和API规范
+- `GRADUATION_AND_INTERVIEW_PREP.md` - 毕业设计与面试准备指南
+- `20DAY_CRASH_COURSE.md` - 20天速成课程
 - `README.md` - 项目简介和快速开始指南
 - `SETUP_GUIDE.md` - 详细的环境配置步骤
 
 **数据目录**：
-- `data/` - 存放索引文件、元数据、模型权重等
+- `data/` - 存放检索历史记录等数据
 - `rsicd_imgs/` - 遥感图像数据集目录
 
-**预处理脚本**：
-- `preparation/build_faiss_image.py` - 为图像库构建FAISS向量索引
-- `preparation/build_faiss_text.py` - 为文本描述构建FAISS向量索引
-
 **辅助工具**：
-- `tools/dataset_rsicd.json` - RSICD数据集配置
-- `tools/dataset_RSITMD.json` - RSITMD数据集配置
-- `tools/captions.txt` - 图像描述文本文件
-- `tools/get_captions.py` - 从数据集中提取图像描述
-- `tools/img_name.py` - 图像命名工具
+- `demo/tools/dataset_rsicd.json` - RSICD数据集配置
+- `demo/tools/dataset_RSITMD.json` - RSITMD数据集配置
+- `demo/tools/captions.txt` - 图像描述文本文件
+- `demo/tools/get_captions.py` - 从数据集中提取图像描述
+- `demo/tools/img_name.py` - 图像命名工具
+- `demo/tools/search_queries_with_prefixes.txt` - 搜索查询文本
 
 #### 文件功能详解
 
