@@ -23,14 +23,6 @@ wheels/
 .installed.cfg
 *.egg
 
-# Remote sensing images (large files)
-rsicd_imgs/
-demo/rsicd_imgs/
-
-# Data files
-data/
-demo/data/
-
 # IDE
 .vscode/
 .idea/
@@ -44,3 +36,11 @@ Thumbs.db
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Model files (large)
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+*.safetensors
