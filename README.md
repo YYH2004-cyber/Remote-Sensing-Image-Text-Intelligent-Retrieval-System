@@ -275,9 +275,10 @@ A: 可以减少 Top-K 参数值，或者使用 CPU 模式运行。在 `utils.py`
 - [Streamlit](https://streamlit.io/) - 用于构建数据应用的 Python 框架
 
 ## 联系方式
-
+考虑到模型过大需要完整项目请联系我
 - 项目主页: [https://github.com/YYH2004-cyber/Remote-Sensing-Image-Text-Intelligent-Retrieval-System](https://github.com/YYH2004-cyber/Remote-Sensing-Image-Text-Intelligent-Retrieval-System)
 - 问题反馈: [Issues](https://github.com/YYH2004-cyber/Remote-Sensing-Image-Text-Intelligent-Retrieval-System/issues)
+- 邮箱：3165687795@qq.com
 
 ---
 
